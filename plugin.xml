@@ -93,9 +93,9 @@
             src="src/android/ForegroundService.java"
             target-dir="src/de/appplant/cordova/plugin/background" />
 
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
             <application android:allowBackup="false" />
-        </config-file>
+        </edit-config>
 
     </platform>
 
