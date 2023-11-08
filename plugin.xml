@@ -80,9 +80,9 @@
             <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
             <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
         </config-file>
-
-        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-        <application android:allowBackup="false"/>
+            <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+                <application android:allowBackup="false"/>
+            </edit-config>
 
         <source-file
             src="src/android/BackgroundMode.java"
