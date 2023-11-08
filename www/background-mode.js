@@ -410,8 +410,8 @@ exports._isActive = false;
  */
 exports._defaults =
 {
-    title:   'App is running in background',
-    text:    'Doing heavy tasks.',
+    title:   'FixFinder',
+    text:    'Работает в фоне',
     bigText: false,
     resume:  true,
     silent:  false,

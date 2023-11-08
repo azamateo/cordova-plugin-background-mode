@@ -72,7 +72,6 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <service android:name="de.appplant.cordova.plugin.background.ForegroundService" />
-            <application android:allowBackup="false"/>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
@@ -81,6 +80,9 @@
             <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
             <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
         </config-file>
+
+        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+        <application android:allowBackup="false"/>
 
         <source-file
             src="src/android/BackgroundMode.java"
